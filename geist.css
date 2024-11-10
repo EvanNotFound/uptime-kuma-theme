@@ -1,0 +1,305 @@
+/* Light Theme Variables */
+body.light {
+    /* Background and Text */
+    --color-bg: #ffffff; /* White */
+    --color-text: #111827; /* Zinc-900 */
+
+    /* Shadows */
+    --shadow-box-border: #e5e7eb; /* Zinc-200 */
+    --shadow-box-bg: #ffffff; /* White */
+
+    /* Links */
+    --link-color: #2563eb; /* Blue-600 */
+    --link-hover-color: #1d4ed8; /* Blue-700 */
+
+    /* Buttons */
+    --btn-bg-color: #2563eb; /* Blue-600 */
+    --btn-hover-bg-color: #1d4ed8; /* Blue-700 */
+
+    /* Input Fields */
+    --input-border-color: #d1d5db; /* Zinc-300 */
+    --input-bg-color: #ffffff; /* White */
+    --input-text-color: #111827; /* Zinc-900 */
+    --input-focus-border-color: #2563eb; /* Blue-600 */
+
+    /* Badges */
+    --badge-danger-bg: #dc2626; /* Red-600 */
+    --badge-danger-text: #ffffff; /* White */
+    --badge-success-bg: #16a34a; /* Green-600 */
+    --badge-success-text: #ffffff; /* White */
+
+    /* Monitor List */
+    --monitor-item-border: #e5e7eb; /* Zinc-200 */
+
+    /* Footer */
+    --footer-color: #6b7280; /* Zinc-500 */
+
+    /* Alerts */
+    --alert-danger-bg: #fee2e2; /* Red-100 */
+    --alert-danger-text: #991b1b; /* Red-800 */
+    --alert-danger-border: #fecaca; /* Red-200 */
+
+    /* Icons */
+    --icon-times-circle-color: #dc2626; /* Red-600 */
+    --icon-check-circle-color: #16a34a; /* Green-600 */
+
+    /* No-script Message */
+    --noscript-bg: #fef2f2; /* Red-50 */
+    --noscript-text: #991b1b; /* Red-800 */
+    --noscript-border: #fee2e2; /* Red-100 */
+}
+
+/* Dark Theme Variables */
+body.dark {
+    /* Background and Text */
+    --color-bg: #0f172a; /* Zinc-900 */
+    --color-text: #f1f5f9; /* Zinc-100 */
+
+    /* Shadows */
+    --shadow-box-border: #374151; /* Zinc-700 */
+    --shadow-box-bg: #1e293b; /* Zinc-800 */
+
+    /* Links */
+    --link-color: #3b82f6; /* Blue-500 */
+    --link-hover-color: #60a5fa; /* Blue-400 */
+
+    /* Buttons */
+    --btn-bg-color: #3b82f6; /* Blue-500 */
+    --btn-hover-bg-color: #60a5fa; /* Blue-400 */
+
+    /* Input Fields */
+    --input-border-color: #374151; /* Zinc-700 */
+    --input-bg-color: #1e293b; /* Zinc-800 */
+    --input-text-color: #f1f5f9; /* Zinc-100 */
+    --input-focus-border-color: #3b82f6; /* Blue-500 */
+
+    /* Badges */
+    --badge-danger-bg: #dc2626; /* Red-600 */
+    --badge-danger-text: #ffffff; /* White */
+    --badge-success-bg: #16a34a; /* Green-600 */
+    --badge-success-text: #ffffff; /* White */
+
+    /* Monitor List */
+    --monitor-item-border: #374151; /* Zinc-700 */
+
+    /* Footer */
+    --footer-color: #9ca3af; /* Zinc-400 */
+
+    /* Alerts */
+    --alert-danger-bg: #7f1d1d; /* Red-900 */
+    --alert-danger-text: #fecaca; /* Red-200 */
+    --alert-danger-border: #fca5a5; /* Red-300 */
+
+    /* Icons */
+    --icon-times-circle-color: #dc2626; /* Red-600 */
+    --icon-check-circle-color: #16a34a; /* Green-600 */
+
+    /* No-script Message */
+    --noscript-bg: #7f1d1d; /* Red-900 */
+    --noscript-text: #fecaca; /* Red-200 */
+    --noscript-border: #fca5a5; /* Red-300 */
+}
+
+
+
+/* Base styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+/* Light Theme */
+body.light {
+    /* CSS variables are already defined above */
+}
+
+/* Dark Theme */
+body.dark {
+    /* CSS variables are already defined above */
+}
+
+/* Shadows */
+.shadow-box {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm for light theme */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid var(--shadow-box-border);
+    background-color: var(--shadow-box-bg);
+}
+
+body.dark .shadow-box {
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1); /* Adjusted shadow for dark theme */
+    border: 1px solid var(--shadow-box-border);
+    background-color: var(--shadow-box-bg);
+}
+
+/* Borders */
+.container {
+    border: 1px solid transparent;
+}
+
+body.dark .container {
+    border-color: transparent;
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+body.dark a {
+    color: var(--link-color);
+}
+
+body.dark a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--btn-bg-color);
+    color: #ffffff;
+    border-radius: 6px; /* Rounded corners */
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-bg-color);
+}
+
+body.dark .btn {
+    background-color: var(--btn-bg-color);
+}
+
+body.dark .btn:hover {
+    background-color: var(--btn-hover-bg-color);
+}
+
+/* Input Fields */
+input, textarea, select {
+    border: 1px solid var(--input-border-color);
+    border-radius: 6px; /* Rounded corners */
+    background-color: var(--input-bg-color);
+    color: var(--input-text-color);
+    padding: 0.5em;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--input-focus-border-color);
+    outline: none;
+    box-shadow: 0 0 0 1px var(--input-focus-border-color);
+}
+
+body.dark input, body.dark textarea, body.dark select {
+    border: 1px solid var(--input-border-color);
+    background-color: var(--input-bg-color);
+    color: var(--input-text-color);
+}
+
+body.dark input:focus, body.dark textarea:focus, body.dark select:focus {
+    border-color: var(--input-focus-border-color);
+    box-shadow: 0 0 0 1px var(--input-focus-border-color);
+}
+
+/* Badges */
+.badge {
+    border-radius: 9999px; /* Rounded-full */
+    padding: 0.25em 0.75em;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.badge.bg-danger {
+    background-color: var(--badge-danger-bg);
+    color: var(--badge-danger-text);
+}
+
+.badge.bg-success {
+    background-color: var(--badge-success-bg);
+    color: var(--badge-success-text);
+}
+
+/* Monitor List */
+.monitor-list .item {
+    border-bottom: 1px solid var(--monitor-item-border);
+}
+
+body.dark .monitor-list .item {
+    border-bottom: 1px solid var(--monitor-item-border);
+}
+
+/* Footer */
+footer {
+    color: var(--footer-color);
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+body.dark footer {
+    color: var(--footer-color);
+}
+
+/* Alerts */
+.alert {
+    border-radius: 6px; /* Rounded corners */
+    padding: 1em;
+}
+
+.alert.alert-danger {
+    background-color: var(--alert-danger-bg);
+    color: var(--alert-danger-text);
+    border: 1px solid var(--alert-danger-border);
+}
+
+body.dark .alert.alert-danger {
+    background-color: var(--alert-danger-bg);
+    color: var(--alert-danger-text);
+    border: 1px solid var(--alert-danger-border);
+}
+
+/* Icons */
+svg.svg-inline--fa {
+    fill: currentColor;
+}
+
+.fa-times-circle {
+    color: var(--icon-times-circle-color);
+}
+
+.fa-check-circle {
+    color: var(--icon-check-circle-color);
+}
+
+/* No-script message */
+.noscript-message {
+    background-color: var(--noscript-bg);
+    color: var(--noscript-text);
+    border: 1px solid var(--noscript-border);
+    border-radius: 6px; /* Rounded corners */
+    padding: 1em;
+    text-align: center;
+}
+
+body.dark .noscript-message {
+    background-color: var(--noscript-bg);
+    color: var(--noscript-text);
+    border: 1px solid var(--noscript-border);
+}
+
+/* Adjust other elements as needed */
+
+/* Additional adjustments per your requirements */
+
+
